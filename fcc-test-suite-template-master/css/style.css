@@ -4,8 +4,16 @@ body{
     height: 130vh;
 
 }
+.container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
 .header{
     text-align: center;
+    position: relative;
+    left: 50%;
+    
 }
 .headings{
     font-size: 1.5rem;
@@ -19,13 +27,45 @@ body{
 }
 .form-div{
     background-color: #1b1b32;
-    height: 120vh;
+    height: 110vh;
     width: 100vh;
-    margin-bottom: 2rem;
-
+    margin-bottom: rem;
     padding: 1rem;
   position: relative;
+  left: 55%;
   
+}
+@media screen and (min-width:1150) {
+    .form-div{
+        position: relative;
+  left: 45%;
+    }
+    @media screen and (min-width:1130) {
+        .form-div{
+            position: relative;
+      left: 40%;
+        }
+}
+}
+@media screen and (min-width:900) {
+    .form-div{
+        position: relative;
+  left: 35%;
+    }
+}
+
+@media screen and (min-width:800) {
+    .form-div{
+        position: relative;
+  left: 25%;
+    }
+}
+
+@media screen and (min-width:650) {
+    .form-div{
+        position: relative;
+  left: 15%;
+    }
 }
 .form-label{
     display: block;
